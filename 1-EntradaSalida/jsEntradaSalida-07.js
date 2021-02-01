@@ -18,8 +18,8 @@ function restar() {
 	let num1;
 	let num2;
 	let resta;
-	num1 = parseFloat(document.getElementById("txtIdNumeroUno").value);
-	num2 = parseFloat(document.getElementById("txtIdNumeroDos").value);
+	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	resta = num1 - num2;
 	alert(`La resta es: ${resta}`);
 
