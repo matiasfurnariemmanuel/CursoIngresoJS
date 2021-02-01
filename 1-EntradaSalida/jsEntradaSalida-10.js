@@ -8,7 +8,7 @@ function mostrarAumento() {
 	let importefinal;
 	let descuento;
 	importe = parseFloat(document.getElementById("txtIdSueldo").value);
-	descuento = sueldo * 25 / 100;
+	descuento = importe * 25 / 100;
 	importefinal = importe - descuento;
 	document.getElementById("txtIdResultado").value = importefinal;
 }
