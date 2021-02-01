@@ -21,7 +21,7 @@ function restar() {
 	num1 = parseFloat(document.getElementById("txtIdNumeroUno").value);
 	num2 = parseFloat(document.getElementById("txtIdNumeroDos").value);
 	resta = num1 - num2;
-	alert(`La suma es: ${resta}`);
+	alert(`La resta es: ${resta}`);
 
 
 }
@@ -33,7 +33,7 @@ function multiplicar() {
 	num1 = parseFloat(document.getElementById("txtIdNumeroUno").value);
 	num2 = parseFloat(document.getElementById("txtIdNumeroDos").value);
 	multiplicar = num1 * num2;
-	alert(`La suma es: ${multiplicar}`);
+	alert(`La multiplicacion es: ${multiplicar}`);
 
 
 }
@@ -45,7 +45,7 @@ function dividir() {
 	num1 = parseFloat(document.getElementById("txtIdNumeroUno").value);
 	num2 = parseFloat(document.getElementById("txtIdNumeroDos").value);
 	division = num1 / num2;
-	alert(`La suma es: ${division}`);
+	alert(`La division es: ${division}`);
 
 
 }
