@@ -30,8 +30,8 @@ function multiplicar() {
 	let num1;
 	let num2;
 	let multiplicar;
-	num1 = parseFloat(document.getElementById("txtIdNumeroUno").value);
-	num2 = parseFloat(document.getElementById("txtIdNumeroDos").value);
+	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	multiplicar = num1 * num2;
 	alert(`La multiplicacion es: ${multiplicar}`);
 
@@ -42,8 +42,8 @@ function dividir() {
 	let num1;
 	let num2;
 	let division;
-	num1 = parseFloat(document.getElementById("txtIdNumeroUno").value);
-	num2 = parseFloat(document.getElementById("txtIdNumeroDos").value);
+	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
+	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
 	division = num1 / num2;
 	alert(`La division es: ${division}`);
 
