@@ -1,4 +1,4 @@
-/*
+/* FURNARI MATIAS
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
@@ -7,10 +7,12 @@ function sumar() {
 	let num1;
 	let num2;
 	let suma;
-	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	num1 = document.getElementById("txtIdNumeroUno").value;
+	num1 = parseInt(num1);
+	num2 = document.getElementById("txtIdNumeroDos").value;
+	num2 = parseInt(num2);
 	suma = num1 + num2;
-	alert(`La suma es: ${suma}`);
+	alert("La suma es: "+suma);
 
 }
 
@@ -18,10 +20,12 @@ function restar() {
 	let num1;
 	let num2;
 	let resta;
-	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	num1 = document.getElementById("txtIdNumeroUno").value;
+	num1 = parseInt(num1);
+	num2 = document.getElementById("txtIdNumeroDos").value;
+	num2 = parseInt(num2);
 	resta = num1 - num2;
-	alert(`La resta es: ${resta}`);
+	alert("La resta es: "+resta);
 
 
 }
@@ -30,11 +34,12 @@ function multiplicar() {
 	let num1;
 	let num2;
 	let multiplicar;
-	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	num1 = document.getElementById("txtIdNumeroUno").value;
+	num1 = parseInt(num1);
+	num2 = document.getElementById("txtIdNumeroDos").value;
+	num2 = parseInt(num2);
 	multiplicar = num1 * num2;
-	alert(`La multiplicacion es: ${multiplicar}`);
-
+	alert("La multiplicacion es: "+multiplicar);
 
 }
 
@@ -42,11 +47,11 @@ function dividir() {
 	let num1;
 	let num2;
 	let division;
-	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
-	num2 = parseInt(document.getElementById("txtIdNumeroDos").value);
+	num1 = document.getElementById("txtIdNumeroUno").value;
+	num1 = parseInt(num1);
+	num2 = document.getElementById("txtIdNumeroDos").value;
+	num2 = parseInt(num2);
 	division = num1 / num2;
-	alert(`La division es: ${division}`);
-
+	alert("La division es: "+division);
 
 }
-
