@@ -7,9 +7,9 @@ function sumar() {
 	let num1;
 	let num2;
 	let suma;
-	num1 = document.getElementById("txtIdNumeroUno").value;
+	num1 = document.getElementById("txtIdNumeroUno").value;//esto tambien se puede escribir asi : num1 = txtIdNumeroUno.value;
 	num1 = parseInt(num1);
-	num2 = document.getElementById("txtIdNumeroDos").value;
+	num2 = document.getElementById("txtIdNumeroDos").value;//esto tambien se puede escribir asi : num2 = txtIdNumeroDos.value;
 	num2 = parseInt(num2);
 	suma = num1 + num2;
 	alert("La suma es: "+suma);
