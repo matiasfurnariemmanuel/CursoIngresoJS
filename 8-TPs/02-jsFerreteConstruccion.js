@@ -9,10 +9,13 @@ function Rectangulo() {
     let largo;
     let perimetro;
     let alambre;
-    largo = parseInt(document.getElementById("txtIdLargo").value);
-    ancho = parseInt(document.getElementById("txtIdAncho").value);
+    largo = document.getElementById("txtIdLargo").value;
+    largo = parseInt(largo);
+    ancho = document.getElementById("txtIdAncho").value;
+    ancho = parseInt(ancho);
     perimetro = (largo + ancho) * 2;
     alambre = perimetro * 3;
+    // alert = ("Se necesitan comprar "+alambre+" metros de alambre");
     alert = (`Se necesitan comprar ${alambre} metros de alambre`)
 }
 function Circulo() {
@@ -20,10 +23,14 @@ function Circulo() {
     let radio;
     let alambre;
     const PI = Math.PI;//la constante se escribe en mayuscula y se le asigna el valor en la misma linea donde se declara.
-    radio = parseInt(document.elementFromPoint("txtIdRadio").value);
+    // En su defecto, usar la siguiente expresion para definir pi como una variable con un valor determinado (let pi=3.14;)
+    radio = document.elementFromPoint("txtIdRadio").value;
+    radio = parseInt(radio);
     perimetro = 2 * PI * radio;
     alambre = perimetro * 3;
     alert = (`Se necesitan comprar ${alambre} metros de alambre`);
+    // alert = ("Se necesitan comprar "+alambre+" metros de alambre");
+
 }
 function Materiales() {
     let ancho;
@@ -31,8 +38,10 @@ function Materiales() {
     let area;
     let cemento;
     let cal;
-    largo = parseInt(document.getElementById("txtIdLargo").value);
-    ancho = parseInt(document.getElementById("txtIdAncho").value);
+    largo = document.getElementById("txtIdLargo").value;
+    largo = parseInt(largo);
+    ancho = document.getElementById("txtIdAncho").value;
+    ancho = parseInt(ancho)
     area = largo * ancho;
     cemento = area * 2;
     cal = area * 3;
