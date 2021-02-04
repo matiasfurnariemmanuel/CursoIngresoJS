@@ -40,6 +40,7 @@ function PrecioFinal() {
     let producto2;
     let producto3;
     let preciofinal;
+    let suma;
     let iva;
     producto1 = document.getElementById("txtIdPrecioUno").value;
     producto1 = parseFloat(producto1);
@@ -47,9 +48,10 @@ function PrecioFinal() {
     producto2 = parseFloat(producto2);
     producto3 = document.getElementById("txtIdPrecioTres").value;
     producto3 = parseFloat(producto3);
-    iva = ((producto1 + producto2 + producto3) * 21) / 100;
+    suma = producto1 + producto2 + producto3;
+    iva = ((suma) * 21) / 100;
     // iva = (producto1 + producto2 + producto3)*0.21;
-    preciofinal = producto1 + producto2 + producto3 + iva;
+    preciofinal = suma + iva;
     alert("El precio final de los prodcutos con iva es: " + preciofinal);
     //alert(`El precio final de los productos con iva es: ${preciofinal.toFixed(2)}`);toFixed= muestra la cantidad de numeros despues de la coma en los numeros decimales.
 }
