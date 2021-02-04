@@ -8,9 +8,12 @@ function Sumar() {
     let producto2;
     let producto3;
     let suma;
-    producto1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    producto2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    producto3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    producto1 = document.getElementById("txtIdPrecioUno").value;
+    producto1 = parseFloat(producto1);
+    producto2 = document.getElementById("txtIdPrecioDos").value;
+    producto2 = parseFloat(producto2);
+    producto3 = document.getElementById("txtIdPrecioTres").value;
+    producto3 = parseFloat(producto3);
     suma = producto1 + producto2 + producto3;
     alert(`La suma de los precios de los productos es: ${suma}`);
 
@@ -21,11 +24,15 @@ function Promedio() {
     let producto2;
     let producto3;
     let promedio;
-    producto1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    producto2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    producto3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
-    promedio =  (producto1 + producto2 + producto3)/3;
-    alert(`El promedio de los precios de los productos es: ${promedio}`);
+    producto1 = document.getElementById("txtIdPrecioUno").value;
+    producto1 = parseFloat(producto1);
+    producto2 = document.getElementById("txtIdPrecioDos").value;
+    producto2 = parseFloat(producto2);
+    producto3 = document.getElementById("txtIdPrecioTres").value;
+    producto3 = parseFloat(producto3);
+    promedio = (producto1 + producto2 + producto3) / 3;
+    alert("El promedio de los precios de los productos es: " + promedio);
+    //alert(`El promedio de los precios de los productos es: ${promedio}`);
 
 }
 function PrecioFinal() {
@@ -34,10 +41,15 @@ function PrecioFinal() {
     let producto3;
     let preciofinal;
     let iva;
-    producto1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    producto2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    producto3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
-    iva = ((producto1 + producto2 + producto3)*21)/100;
+    producto1 = document.getElementById("txtIdPrecioUno").value;
+    producto1 = parseFloat(producto1);
+    producto2 = document.getElementById("txtIdPrecioDos").value;
+    producto2 = parseFloat(producto2);
+    producto3 = document.getElementById("txtIdPrecioTres").value;
+    producto3 = parseFloat(producto3);
+    iva = ((producto1 + producto2 + producto3) * 21) / 100;
+    // iva = (producto1 + producto2 + producto3)*0.21;
     preciofinal = producto1 + producto2 + producto3 + iva;
-    alert(`El precio final de los productos con iva es: ${preciofinal.toFixed(2)}`);
+    alert("El precio final de los prodcutos con iva es: " + preciofinal);
+    //alert(`El precio final de los productos con iva es: ${preciofinal.toFixed(2)}`);toFixed= muestra la cantidad de numeros despues de la coma en los numeros decimales.
 }
