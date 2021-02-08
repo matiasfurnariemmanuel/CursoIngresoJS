@@ -12,6 +12,7 @@ function mostrarAumento() {
     let porcentaje;
     let descuento;
 	let precioFinal;
+	let mensaje;
 
 	nombreProducto= prompt("Ingrese el nombre del producto: ");
 	precioProducto= document.getElementById("txtIdImporte").value;
@@ -20,7 +21,8 @@ function mostrarAumento() {
 	porcentaje = parseFloat(porcentaje);
 	descuento= precioProducto*porcentaje/100;
 	precioFinal= precioProducto-descuento;
-	alert("Usted compro un "+nombreProducto+" con un "+porcentaje+" de descuento,el precio final es: "+precioFinal);
+    mensaje = "Usted compro un "+nombreProducto+" con un "+porcentaje+" de descuento,el precio final es: "+precioFinal;
+    document.getElementById("txtIdResultado").value = mensaje;
 	*/
 	
 	
