@@ -8,7 +8,7 @@ function mostrar()
 	let edad;
 	edad = document.getElementById("txtIdEdad").value;
 	edad = parseInt(edad);
-	if(edad>=18)
+	if(edad>=18)//if(edad>17)Esto esta mejor programado.Esto seria lo correcto.
 	{
 		alert("Usted tiene "+edad+" años\nUsted es mayor de edad");
 	}
